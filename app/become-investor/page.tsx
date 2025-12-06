@@ -146,7 +146,7 @@ export default function BecomeInvestorPage() {
       {/* Stats Cards - Apple Style */}
       <section className="py-20 bg-sand-light/30">
         <div className="max-w-7xl mx-auto px-8">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -167,21 +167,6 @@ export default function BecomeInvestorPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="bg-white rounded-3xl p-8 text-center shadow-sm hover:shadow-lg transition-all duration-300 border border-card-border"
-            >
-              <div className="w-16 h-16 bg-travel-blue/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <Users className="w-8 h-8 text-travel-blue" />
-              </div>
-              <h3 className="text-5xl font-bold text-title mb-2">500</h3>
-              <p className="text-paragraph font-medium">Max Investors</p>
-              <p className="text-sm text-light-gray mt-2">Limited opportunity</p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
               className="bg-white rounded-3xl p-8 text-center shadow-sm hover:shadow-lg transition-all duration-300 border border-card-border"
             >
               <div className="w-16 h-16 bg-travel-blue/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
