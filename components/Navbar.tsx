@@ -24,6 +24,7 @@ export default function Navbar() {
   const navItems = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
+    { name: "Our Team", href: "/our-team" },
     { name: "Why Invest", href: "/why-invest" },
     { name: "Become an Investor", href: "/become-investor" },
     { name: "Contact", href: "/contact" },
@@ -39,7 +40,7 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex items-center h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 group">
             <motion.div
@@ -58,8 +59,8 @@ export default function Navbar() {
             </div>
           </Link>
 
-          {/* Desktop Navigation - Centered */}
-          <div className="hidden lg:flex items-center space-x-1">
+          {/* Desktop Navigation - Left aligned next to logo */}
+          <div className="hidden lg:flex items-center space-x-1 ml-8">
             {navItems.map((item) => {
               const isActive = pathname === item.href;
               return (
@@ -85,18 +86,8 @@ export default function Navbar() {
             })}
           </div>
 
-          {/* Right Side - CTA Button */}
-          <div className="hidden lg:flex items-center space-x-3">
-            <Link href="/become-investor">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-6 py-2.5 bg-travel-blue text-white rounded-full font-semibold text-sm hover:bg-travel-blue-hover transition-all duration-300 shadow-lg shadow-travel-blue/20 hover:shadow-xl hover:shadow-travel-blue/30"
-              >
-                Invest Now
-              </motion.button>
-            </Link>
-          </div>
+          {/* Spacer to push mobile menu button to the right */}
+          <div className="flex-1"></div>
 
           {/* Mobile menu button */}
           <motion.button

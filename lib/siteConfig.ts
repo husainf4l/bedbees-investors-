@@ -15,7 +15,6 @@ export const siteConfig = {
 
   investor: {
     totalAllocation: "20% equity",
-    targetInvestors: 500,
     minimumInvestment: 1000,
     
     ownership: [
@@ -183,35 +182,31 @@ export const siteConfig = {
   faqs: [
     {
       question: "When do investors start earning?",
-      answer: "After revenue stabilizes, typically from Year 2 onward. Year 1 focuses on building technology, onboarding providers, and acquiring users.",
+      answer: "Investors may begin earning when Bedbees reaches one or more of the following milestones:\n\n1. Company Profitability - Once Bedbees becomes profitable at scale, we may choose to distribute a portion of profits to equity holders or reinvest them for expansion.\n\n2. Valuation Growth - Investors benefit automatically when the company's valuation increases. Your equity becomes more valuable as Bedbees grows, expands globally, and enters new markets.\n\n3. Future Funding Rounds - If Bedbees raises capital at a higher valuation in the future, early investors gain value because they entered at an earlier, lower valuation.\n\n4. Exit Events - If the company is acquired or goes public (IPO), investors receive their proportional share of the proceeds.\n\nThere is no fixed time for earnings — early-stage companies focus on growth first, then value distribution.",
     },
     {
       question: "Is income guaranteed?",
-      answer: "No. Returns depend on real company performance, market adoption, and revenue generation. All projections are estimates only.",
+      answer: "No — income or returns cannot be guaranteed. Like all startup investments, this carries risk.\n\nWhat we can guarantee:\n\n• Full transparency\n• Responsible financial management\n• A team building the platform in-house (zero development cost)\n• Long-term strategic vision\n• A global market opportunity worth trillions\n• A scalable business model designed to grow aggressively\n\nBedbees aims to become a major global travel platform — but like all investments, outcomes depend on performance, adoption, and market conditions.",
     },
     {
       question: "Can investors buy more than $1,000?",
-      answer: "Yes, ownership scales linearly. For example, $5,000 gives you 0.20% equity, $10,000 gives you 0.40%, and so on.",
-    },
-    {
-      question: "Why only 500 investors?",
-      answer: "To maintain exclusivity and manageable distribution while ensuring each investor has meaningful ownership and influence.",
+      answer: "Absolutely — investors can invest more than the minimum amount.\n\nInvestment Options:\n• Minimum: $1,000\n• $2,000\n• $5,000\n• $10,000\n• $25,000\n• $50,000+\n\nValuation Structure:\n• Post-Money Valuation: $10,000,000\n• Equity Offered: 10%\n• Raise Target: $1,000,000\n\nOwnership is proportional to the amount invested. Larger investors receive a larger share of equity and may also qualify for additional benefits, recognition, or early-access perks.",
     },
     {
       question: "What is the long-term vision?",
-      answer: "A global travel ecosystem combining booking, community, and AI - becoming the world's most trusted and transparent travel platform.",
+      answer: "Bedbees aims to become the world's first commission-free global travel ecosystem, built around fairness, transparency, community, and smart technology.\n\nOur long-term vision includes:\n\n1. Becoming the leading global travel marketplace - Hotels, apartments, tours, activities, transport — all in one platform, without commissions.\n\n2. Creating a social travel network - Travelers can connect, share experiences, plan trips together, and discover authentic destinations.\n\n3. Empowering small and medium providers - Giving them a global audience without paying 15–30% in fees.\n\n4. AI-powered travel experiences - A fully personalized trip planner, real-time recommendations, and dynamic pricing tools.\n\n5. Global expansion with regional hubs - Starting with Cyprus, Jordan, UAE, and Europe.\n\n6. A fair economy that benefits everyone - Travelers save money, Providers keep more revenue, Investors own part of a global travel revolution.\n\nBedbees is not just a platform — it's a new travel infrastructure for the world.",
     },
     {
-      question: "How is this different from Booking.com or Airbnb?",
-      answer: "We charge zero commissions, use a subscription model, integrate social features, and prioritize transparency. Traditional platforms take 15-25% commissions, which we eliminate entirely.",
+      question: "How is this different from other travel booking platforms?",
+      answer: "Bedbees is built on fairness and innovation, not commissions and outdated systems.\n\nHere's what makes us fundamentally different:\n\n1. Commission-Free Model - Other travel platforms take 15–30% commissions. Bedbees charges zero commission — providers pay only a small subscription. This unlocks lower prices for travelers, higher income for providers, and a healthier travel economy.\n\n2. Social + Travel in One Platform - Traditional platforms isolate users. Bedbees builds community with profiles, posts, groups, travel buddies, and forums.\n\n3. Full Transparency - No hidden fees. No misleading photos. No fake reviews. AI verifies listings, reviews, taxes, and accuracy.\n\n4. Built for Global Scale from Day 1 - A modern architecture, developed in-house, optimized for massive growth.\n\n5. Providers Get Fair Exposure - No pay-to-win ranking system. Small hotels get equal visibility.\n\nBedbees is not another booking site. It is the next generation of the travel industry.",
     },
     {
       question: "What happens if the company is acquired?",
-      answer: "Investors receive their proportional share of the acquisition value based on their equity percentage.",
+      answer: "If Bedbees is acquired — by a larger tech company, travel giant, or global marketplace — investors benefit directly.\n\nHere is what happens:\n\n• The acquiring company pays for Bedbees\n• The amount is distributed proportionally to all equity holders\n• Investors receive their percentage of the sale price\n• If the acquisition value is high, investor returns can be significant\n\nExample: If Bedbees is acquired for $100M, a $1,000 investor with 0.01% equity receives $10,000.\n\nAcquisition is one of the most common ways early investors earn large returns.",
     },
     {
       question: "Can I sell my equity stake?",
-      answer: "Transfer terms will be outlined in the investment agreement. Generally, equity can be transferred with company approval.",
+      answer: "In most early-stage startups, equity is not publicly tradable.\n\nHowever, you keep your ownership until:\n\n• Acquisition\n• IPO (Initial Public Offering)\n• Secondary market opportunity\n• Liquidity event arranged by the platform (like Republic's marketplace)\n\nKey Points:\n\n• Some crowdfunding platforms allow secondary share selling\n• Republic has a future secondary market feature that may support trading once Bedbees grows\n• If the company grows, your equity value grows\n• Even without selling immediately, your ownership can appreciate significantly over time\n\nOwning equity now means you participate in the long-term success of Bedbees.",
     },
   ],
 

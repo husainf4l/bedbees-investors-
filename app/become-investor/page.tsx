@@ -31,7 +31,6 @@ export default function BecomeInvestorPage() {
   const benefits = [
     "Equity ownership in a global-scale travel platform",
     "Priority access to investor reports and briefings",
-    "Founding Investor status inside the platform",
     "Exclusive lifetime recognition as early supporters",
     "Early access to new features and pilot programs",
     "Direct communication channels with the founders",

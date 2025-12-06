@@ -28,7 +28,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.8 }}
-                className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-title"
+                className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-title"
               >
                 We&apos;re Rewriting the Future of Travel — And You Can Own a Piece of It.
               </motion.h1>
@@ -73,10 +73,6 @@ export default function Hero() {
               <div className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border border-card-border shadow-sm">
                 <div className="text-3xl font-bold text-travel-blue">$1M</div>
                 <div className="text-xs text-paragraph mt-1">Target Valuation</div>
-              </div>
-              <div className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border border-card-border shadow-sm">
-                <div className="text-3xl font-bold text-travel-blue">500</div>
-                <div className="text-xs text-paragraph mt-1">Investors</div>
               </div>
               <div className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border border-card-border shadow-sm">
                 <div className="text-3xl font-bold text-travel-blue">20%</div>

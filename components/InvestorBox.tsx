@@ -25,12 +25,6 @@ export default function InvestorBox() {
             </span>
           </div>
           <div className="flex justify-between items-center">
-            <span className="text-gray-700 font-medium">Target Investors:</span>
-            <span className="text-primary-700 font-bold">
-              {siteConfig.investor.targetInvestors}
-            </span>
-          </div>
-          <div className="flex justify-between items-center">
             <span className="text-gray-700 font-medium">Minimum Entry:</span>
             <span className="text-primary-700 font-bold">
               ${siteConfig.investor.minimumInvestment.toLocaleString()}

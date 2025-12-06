@@ -484,7 +484,7 @@ export default function ContactPage() {
               Ready to Invest?
             </h2>
             <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              Join 500 investors building the future of travel. Our team is ready to 
+              Join us in building the future of travel. Our team is ready to 
               answer your questions and guide you through the investment process.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

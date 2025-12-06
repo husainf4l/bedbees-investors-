@@ -21,14 +21,6 @@ export default function InvestorPage() {
           >
             Investor Information
           </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.5 }}
-            className="text-xl max-w-3xl mx-auto text-blue-100"
-          >
-            Join 500 founding investors building the future of ethical travel
-          </motion.p>
         </div>
       </section>
 
@@ -173,22 +165,6 @@ export default function InvestorPage() {
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.4, duration: 0.5 }}
-            className="card"
-          >
-            <h3 className="text-xl font-bold text-gray-900 mb-3">
-              👥 Limited Founding Investor Pool
-            </h3>
-            <p className="text-gray-700">
-              Only 500 investors will ever have founding investor status. This
-              exclusivity ensures meaningful ownership and influence.
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
             transition={{ delay: 0.5, duration: 0.5 }}
             className="card"
           >
@@ -267,23 +243,6 @@ export default function InvestorPage() {
             <p className="text-gray-700">
               Regular financial reports, growth metrics, and strategic updates
               directly from the founding team.
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.5 }}
-            className="card bg-gradient-to-br from-primary-50 to-white"
-          >
-            <div className="text-4xl mb-4">🎖️</div>
-            <h3 className="text-xl font-bold text-gray-900 mb-3">
-              Founding Investor Status
-            </h3>
-            <p className="text-gray-700">
-              Exclusive recognition as one of the first 500 believers in the
-              vision.
             </p>
           </motion.div>
 
