@@ -90,17 +90,17 @@ export default function WhyBedbeesPage() {
               className="inline-flex items-center gap-2 bg-white rounded-full px-5 py-2 border border-travel-blue/20 shadow-sm"
             >
               <Heart className="w-4 h-4 text-travel-blue" />
-              <span className="text-sm font-semibold text-travel-blue">The Bedbees Difference</span>
+              <span className="text-sm font-semibold text-travel-blue">Investment Opportunity</span>
             </motion.div>
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-title tracking-tight leading-tight">
-              The Travel Industry<br />
-              <span className="text-travel-blue">Is Broken</span>
+              A Trillion-Dollar Industry<br />
+              <span className="text-travel-blue">Ready to Disrupt</span>
             </h1>
             
             <p className="text-2xl md:text-3xl text-paragraph max-w-4xl mx-auto font-light leading-relaxed">
-              Hidden fees. Fake reviews. Overbooking. Commission exploitation.<br />
-              <span className="font-semibold text-travel-blue">Bedbees fixes everything.</span>
+              Massive problems. Broken platforms. Zero innovation.<br />
+              <span className="font-semibold text-travel-blue">Bedbees is the solution investors have been waiting for.</span>
             </p>
           </motion.div>
         </div>
@@ -117,10 +117,10 @@ export default function WhyBedbeesPage() {
             className="text-center mb-20"
           >
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-title mb-6">
-              What's Wrong — And How We Fix It
+              The Market Opportunity
             </h2>
             <p className="text-xl md:text-2xl text-paragraph font-light max-w-3xl mx-auto">
-              Every problem plaguing travel platforms. Every Bedbees solution.
+              Massive industry problems. Bedbees solutions. Billion-dollar potential.
             </p>
           </motion.div>
 
@@ -260,10 +260,10 @@ export default function WhyBedbeesPage() {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight">
-              Ready to Experience<br />Travel Done Right?
+              Ready to Invest in<br />the Future of Travel?
             </h2>
             <p className="text-xl md:text-2xl mb-12 font-light opacity-90">
-              Join the movement transforming the travel industry
+              Join the investors transforming a trillion-dollar industry
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center">

@@ -24,7 +24,7 @@ export default function Navbar() {
   const navItems = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
-    { name: "Why Bedbees", href: "/why-bedbees" },
+    { name: "Why Invest", href: "/why-invest" },
     { name: "Become an Investor", href: "/become-investor" },
     { name: "Contact", href: "/contact" },
   ];
