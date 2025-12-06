@@ -112,7 +112,7 @@ export default function InvestorPage() {
               🌍 Massive Market Opportunity
             </h3>
             <p className="text-gray-700">
-              The global travel market is worth $1.9 trillion annually. We're
+              The global travel market is worth $1.9 trillion annually. We&apos;re
               attacking the core inefficiency (commissions) that costs the
               industry billions.
             </p>
@@ -131,7 +131,7 @@ export default function InvestorPage() {
             <p className="text-gray-700">
               Traditional platforms (Booking, Airbnb, Expedia) cannot adopt our
               model without destroying their businesses. We have a moat they
-              can't cross.
+              can&apos;t cross.
             </p>
           </motion.div>
 
@@ -197,7 +197,7 @@ export default function InvestorPage() {
             </h3>
             <p className="text-gray-700">
               You can invest in a company doing good while building massive
-              value. Transparency and profitability aren't mutually exclusive.
+              value. Transparency and profitability aren&apos;t mutually exclusive.
             </p>
           </motion.div>
 

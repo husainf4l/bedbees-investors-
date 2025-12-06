@@ -92,7 +92,7 @@ export default function AboutPage() {
                 Redesigning how the world travels.
               </h1>
               <p className="mt-4 text-lg md:text-xl text-gray-600 leading-relaxed">
-                We're building a transparent, human-centered travel platform
+                We&apos;re building a transparent, human-centered travel platform
                 where travelers, providers, and communities all win.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4">

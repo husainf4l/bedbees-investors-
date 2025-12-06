@@ -234,9 +234,9 @@ export default function BusinessModelPage() {
               ✅ Competitive Moat
             </h3>
             <p className="text-gray-700">
-              Traditional platforms can't switch to subscriptions without
+              Traditional platforms can&apos;t switch to subscriptions without
               destroying their business model. We have a structural advantage
-              they can't replicate.
+              they can&apos;t replicate.
             </p>
           </motion.div>
         </div>

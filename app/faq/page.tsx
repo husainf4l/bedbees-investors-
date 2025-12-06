@@ -52,7 +52,7 @@ export default function FAQPage() {
         >
           <div className="card">
             <p className="text-lg text-gray-700 mb-6">
-              We're here to help. Schedule a call with our team to discuss the
+              We&apos;re here to help. Schedule a call with our team to discuss the
               investment opportunity in detail, ask specific questions, and
               understand how BedBees can fit into your investment portfolio.
             </p>
@@ -94,7 +94,7 @@ export default function FAQPage() {
               About BedBees
             </h3>
             <p className="text-gray-700 mb-4">
-              Learn about our mission, vision, and why we're rebuilding travel
+              Learn about our mission, vision, and why we&apos;re rebuilding travel
               from the ground up.
             </p>
             <Link
