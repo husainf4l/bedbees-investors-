@@ -19,10 +19,13 @@ import {
 
 export default function BecomeInvestorPage() {
   const ownershipTable = [
-    { investment: "$1,000", ownership: "0.04%" },
-    { investment: "$2,000", ownership: "0.08%" },
-    { investment: "$5,000", ownership: "0.20%" },
-    { investment: "$10,000", ownership: "0.40%" },
+    { investment: "$1,000", ownership: "0.01%" },
+    { investment: "$2,000", ownership: "0.02%" },
+    { investment: "$5,000", ownership: "0.05%" },
+    { investment: "$10,000", ownership: "0.10%" },
+    { investment: "$25,000", ownership: "0.25%" },
+    { investment: "$50,000", ownership: "0.50%" },
+    { investment: "$100,000", ownership: "1.00%" },
   ];
 
   const benefits = [
@@ -94,25 +97,46 @@ export default function BecomeInvestorPage() {
             </motion.div>
 
             <h1 className="text-6xl md:text-7xl font-bold text-title tracking-tight">
-              Own the Future<br />of Travel
+              We&apos;re Rebuilding the Future of Global Travel<br />
+              <span className="text-travel-blue">And You Can Own a Piece of It</span>
             </h1>
             
             <p className="text-2xl md:text-3xl text-paragraph max-w-3xl mx-auto font-light">
-              Join 500 visionaries building a global platform that changes everything.
+              Join us in transforming a trillion-dollar industry with a fair, intelligent, commission-free travel platform built for the world.
             </p>
+
+            {/* Funding Stats */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3, duration: 0.6 }}
+              className="flex flex-wrap gap-6 justify-center text-lg font-semibold text-title"
+            >
+              <div className="flex items-center gap-2">
+                <Target className="w-5 h-5 text-travel-blue" />
+                <span>Funding Target: <span className="text-travel-blue">$1,000,000</span></span>
+              </div>
+              <div className="w-px h-6 bg-paragraph/20"></div>
+              <div className="flex items-center gap-2">
+                <PieChart className="w-5 h-5 text-travel-blue" />
+                <span>Equity Available: <span className="text-travel-blue">10%</span></span>
+              </div>
+            </motion.div>
 
             {/* CTA */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4, duration: 0.6 }}
+              transition={{ delay: 0.5, duration: 0.6 }}
               className="flex flex-col sm:flex-row gap-4 justify-center pt-4"
             >
-              <button className="px-8 py-4 bg-travel-blue text-white rounded-full font-semibold hover:bg-travel-blue-hover transition-all duration-300 shadow-lg hover:shadow-xl">
-                Invest Now
-              </button>
-              <button className="px-8 py-4 bg-white text-travel-blue border-2 border-travel-blue rounded-full font-semibold hover:bg-travel-blue hover:text-white transition-all duration-300">
-                Learn More
+              <Link href="/contact">
+                <button className="px-10 py-5 bg-travel-blue text-white rounded-full font-semibold hover:bg-travel-blue-hover transition-all duration-300 shadow-lg hover:shadow-xl text-lg">
+                  Join the Bedbees Founding Investor Program
+                </button>
+              </Link>
+              <button className="px-10 py-5 bg-white text-travel-blue border-2 border-travel-blue rounded-full font-semibold hover:bg-travel-blue hover:text-white transition-all duration-300 text-lg">
+                Learn About Equity & Valuation
               </button>
             </motion.div>
           </motion.div>
@@ -133,9 +157,9 @@ export default function BecomeInvestorPage() {
               <div className="w-16 h-16 bg-travel-blue/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <PieChart className="w-8 h-8 text-travel-blue" />
               </div>
-              <h3 className="text-5xl font-bold text-title mb-2">20%</h3>
-              <p className="text-paragraph font-medium">Equity Available</p>
-              <p className="text-sm text-light-gray mt-2">For founding investors</p>
+              <h3 className="text-5xl font-bold text-title mb-2">10%</h3>
+              <p className="text-paragraph font-medium">Equity Offered</p>
+              <p className="text-sm text-light-gray mt-2">$10M post-money valuation</p>
             </motion.div>
 
             <motion.div
@@ -258,6 +282,202 @@ export default function BecomeInvestorPage() {
                 </tbody>
               </table>
             </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Equity Explanation - Apple Style */}
+      <section className="py-24 bg-white">
+        <div className="max-w-4xl mx-auto px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="bg-gradient-to-br from-sand-light/50 to-white rounded-3xl p-10 md:p-12 border border-card-border shadow-lg"
+          >
+            <div className="w-14 h-14 bg-travel-blue/10 rounded-2xl flex items-center justify-center mb-6">
+              <PieChart className="w-7 h-7 text-travel-blue" />
+            </div>
+            <h3 className="text-3xl md:text-4xl font-bold text-title mb-6">
+              Simple, Transparent Equity Structure
+            </h3>
+            <p className="text-xl text-paragraph leading-relaxed mb-6">
+              Bedbees is offering <span className="font-bold text-travel-blue">10% equity</span> in exchange for a <span className="font-bold text-travel-blue">$1,000,000</span> investment round.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div className="bg-white rounded-2xl p-6 border border-card-border">
+                <p className="text-sm text-paragraph font-semibold mb-2">Pre-Money Valuation</p>
+                <p className="text-3xl font-bold text-title">$9,000,000</p>
+              </div>
+              <div className="bg-white rounded-2xl p-6 border border-card-border">
+                <p className="text-sm text-paragraph font-semibold mb-2">Post-Money Valuation</p>
+                <p className="text-3xl font-bold text-travel-blue">$10,000,000</p>
+              </div>
+            </div>
+            <p className="text-lg text-paragraph leading-relaxed">
+              Investors receive ownership proportional to the amount they invest. Your equity stake grows with the company.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Why We Are Raising $1M - Apple Style */}
+      <section className="py-32 bg-sand-light/30">
+        <div className="max-w-6xl mx-auto px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
+            <div className="w-16 h-16 bg-travel-blue/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <Rocket className="w-8 h-8 text-travel-blue" />
+            </div>
+            <h2 className="text-5xl md:text-6xl font-bold text-title mb-6">
+              Why We&apos;re Raising $1M
+            </h2>
+            <p className="text-2xl text-paragraph font-light max-w-3xl mx-auto">
+              Strategic investments to accelerate global expansion and market dominance
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            {[
+              {
+                icon: Globe,
+                title: "Scale provider onboarding globally",
+                description: "Expand our network to thousands of hotels, tour operators, and travel providers across key markets"
+              },
+              {
+                icon: Rocket,
+                title: "Launch full AI-powered travel search",
+                description: "Deploy intelligent search that understands context, preferences, and delivers personalized results"
+              },
+              {
+                icon: Target,
+                title: "Expand into EU, GCC, and Asia",
+                description: "Establish presence in high-growth regions with localized content and partnerships"
+              },
+              {
+                icon: TrendingUp,
+                title: "Marketing campaigns to acquire travelers",
+                description: "Build brand awareness and drive user acquisition through targeted digital campaigns"
+              },
+              {
+                icon: Shield,
+                title: "Build partnerships with tourism boards and hotels",
+                description: "Forge strategic alliances with destinations and major hospitality brands"
+              },
+              {
+                icon: Users,
+                title: "Grow engineering and product team",
+                description: "Hire world-class talent to accelerate development and maintain technical excellence"
+              },
+              {
+                icon: DollarSign,
+                title: "Launch Bedbees mobile apps",
+                description: "Bring the platform to iOS and Android for seamless mobile-first travel experiences"
+              },
+              {
+                icon: Trophy,
+                title: "Accelerate monetization with subscription providers",
+                description: "Onboard premium providers at scale to generate recurring subscription revenue"
+              }
+            ].map((item, index) => {
+              const Icon = item.icon;
+              return (
+                <motion.div
+                  key={item.title}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1, duration: 0.6 }}
+                  className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 border border-card-border"
+                >
+                  <div className="w-12 h-12 bg-travel-blue/10 rounded-2xl flex items-center justify-center mb-4">
+                    <Icon className="w-6 h-6 text-travel-blue" />
+                  </div>
+                  <h3 className="text-xl font-bold text-title mb-3">
+                    {item.title}
+                  </h3>
+                  <p className="text-paragraph leading-relaxed">{item.description}</p>
+                </motion.div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Investment Calculator Example - Apple Style */}
+      <section className="py-32 bg-white">
+        <div className="max-w-5xl mx-auto px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
+            <div className="w-16 h-16 bg-travel-blue/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <TrendingUp className="w-8 h-8 text-travel-blue" />
+            </div>
+            <h2 className="text-5xl md:text-6xl font-bold text-title mb-6">
+              Growth Potential Example
+            </h2>
+            <p className="text-2xl text-paragraph font-light max-w-3xl mx-auto">
+              Here&apos;s what your investment could be worth if Bedbees reaches $100M valuation
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="bg-gradient-to-br from-sand-light/50 to-white rounded-3xl p-10 border-2 border-travel-blue/20 shadow-lg"
+            >
+              <div className="text-center">
+                <p className="text-lg text-paragraph mb-2 font-medium">Your Investment</p>
+                <p className="text-5xl font-bold text-title mb-6">$1,000</p>
+                <div className="w-16 h-1 bg-travel-blue/30 mx-auto mb-6"></div>
+                <p className="text-lg text-paragraph mb-2 font-medium">Potential Value at $100M</p>
+                <p className="text-6xl font-bold text-travel-blue">$10,000</p>
+                <p className="text-sm text-paragraph/70 mt-4">10x return</p>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="bg-gradient-to-br from-travel-blue/5 to-white rounded-3xl p-10 border-2 border-travel-blue/20 shadow-lg"
+            >
+              <div className="text-center">
+                <p className="text-lg text-paragraph mb-2 font-medium">Your Investment</p>
+                <p className="text-5xl font-bold text-title mb-6">$10,000</p>
+                <div className="w-16 h-1 bg-travel-blue/30 mx-auto mb-6"></div>
+                <p className="text-lg text-paragraph mb-2 font-medium">Potential Value at $100M</p>
+                <p className="text-6xl font-bold text-travel-blue">$100,000</p>
+                <p className="text-sm text-paragraph/70 mt-4">10x return</p>
+              </div>
+            </motion.div>
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3, duration: 0.6 }}
+            className="bg-sand-light/30 rounded-2xl p-6 border border-card-border"
+          >
+            <p className="text-center text-paragraph/80 text-sm leading-relaxed">
+              <span className="font-semibold text-title">Important:</span> These projections are hypothetical examples only and not guaranteed. 
+              Actual returns depend entirely on company performance, market conditions, and future valuations. Past performance does not guarantee future results.
+            </p>
           </motion.div>
         </div>
       </section>
@@ -450,7 +670,7 @@ export default function BecomeInvestorPage() {
         </div>
       </section>
 
-      {/* Why Bedbees Will Succeed - Apple Style */}
+      {/* Why Invest in Bedbees - Apple Style */}
       <section className="py-32 bg-white">
         <div className="max-w-6xl mx-auto px-8">
           <motion.div
@@ -461,19 +681,55 @@ export default function BecomeInvestorPage() {
             className="text-center mb-20"
           >
             <h2 className="text-5xl md:text-6xl font-bold text-title mb-6">
-              Built for Global Success
+              Why Invest in Bedbees
             </h2>
             <p className="text-2xl text-paragraph font-light max-w-3xl mx-auto">
-              Five powerful advantages that position Bedbees for dominance
+              Join a movement transforming the trillion-dollar travel industry
             </p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {advantages.map((advantage, index) => {
-              const Icon = advantage.icon;
+            {[
+              {
+                icon: Globe,
+                title: "A commission-free travel platform ready to scale globally",
+                description: "Break free from the high-commission model and empower providers with a sustainable subscription approach"
+              },
+              {
+                icon: TrendingUp,
+                title: "Huge market opportunity (multi-trillion dollar industry)",
+                description: "Tap into one of the world's largest and fastest-growing sectors with massive upside potential"
+              },
+              {
+                icon: Users,
+                title: "A modern marketplace empowering both travelers and providers",
+                description: "Connect millions of travelers with authentic experiences through a transparent, social platform"
+              },
+              {
+                icon: Target,
+                title: "A global-first expansion strategy with Cyprus HQ",
+                description: "Strategically positioned to serve EU, GCC, and emerging markets from day one"
+              },
+              {
+                icon: DollarSign,
+                title: "Attractive early-stage valuation ($10M post-money)",
+                description: "Get in at the ground floor with favorable equity terms before scaling accelerates"
+              },
+              {
+                icon: Trophy,
+                title: "Investors join the Bedbees Founding Investor Group",
+                description: "Exclusive status, priority updates, and recognition as early supporters shaping the future"
+              },
+              {
+                icon: Rocket,
+                title: "Future rounds planned on Republic/Seedrs for global exposure",
+                description: "Next funding stages will expand investor base and increase company visibility internationally"
+              }
+            ].map((item, index) => {
+              const Icon = item.icon;
               return (
                 <motion.div
-                  key={advantage.title}
+                  key={item.title}
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -484,9 +740,9 @@ export default function BecomeInvestorPage() {
                     <Icon className="w-7 h-7 text-travel-blue" />
                   </div>
                   <h3 className="text-xl font-bold text-title mb-4 leading-tight">
-                    {advantage.title}
+                    {item.title}
                   </h3>
-                  <p className="text-paragraph leading-relaxed">{advantage.description}</p>
+                  <p className="text-paragraph leading-relaxed">{item.description}</p>
                 </motion.div>
               );
             })}
@@ -657,15 +913,48 @@ export default function BecomeInvestorPage() {
               transition={{ delay: 0.7, duration: 0.6 }}
               className="flex flex-col items-center gap-6"
             >
-              <Link href="/contact">
-                <button className="bg-white text-travel-blue font-bold text-xl px-14 py-6 rounded-full shadow-2xl hover:shadow-3xl hover:scale-105 transform transition-all duration-300">
-                  Become a Founding Investor
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link href="/contact">
+                  <button className="bg-white text-travel-blue font-bold text-xl px-14 py-6 rounded-full shadow-2xl hover:shadow-3xl hover:scale-105 transform transition-all duration-300">
+                    Join the Bedbees Founding Investor Program
+                  </button>
+                </Link>
+                <button className="bg-white/10 border-2 border-white text-white font-bold text-xl px-14 py-6 rounded-full hover:bg-white hover:text-travel-blue transition-all duration-300">
+                  Get Early Access to Investor Updates
                 </button>
-              </Link>
+              </div>
               <p className="text-white/80 text-lg font-light">
                 Help build the future of global travel.
               </p>
             </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Legal Disclaimer - Apple Style */}
+      <section className="py-16 bg-sand-light/20">
+        <div className="max-w-4xl mx-auto px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="bg-white rounded-3xl p-8 md:p-10 border border-card-border shadow-sm"
+          >
+            <div className="flex items-start gap-4">
+              <div className="w-10 h-10 bg-travel-blue/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <Shield className="w-5 h-5 text-travel-blue" />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-title mb-3">Important Investment Disclaimer</h3>
+                <p className="text-paragraph leading-relaxed">
+                  Investing in startups involves risk. Equity value may increase or decrease based on company performance, market conditions, and various external factors. 
+                  <span className="font-semibold"> This is not a guarantee of future returns.</span> All financial projections and growth scenarios presented are 
+                  hypothetical examples for illustrative purposes only. Please conduct your own due diligence and consult with financial advisors before making any investment decisions. 
+                  Past performance does not guarantee future results.
+                </p>
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>
