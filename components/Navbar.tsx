@@ -42,21 +42,18 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-3 group">
+          <Link href="/" className="flex items-center group">
             <motion.div
               className="relative"
-              whileHover={{ scale: 1.1, rotate: 5 }}
+              whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3, type: "spring" }}
             >
-              <div className="absolute inset-0 bg-travel-blue/10 rounded-full blur-xl"></div>
-              <span className="text-3xl relative z-10">🐝</span>
+              <img 
+                src="/videos/bedbees.webp" 
+                alt="Bedbees Logo" 
+                className="h-8 w-auto object-contain"
+              />
             </motion.div>
-            <div className="flex flex-col">
-              <span className="text-2xl font-bold text-title group-hover:text-travel-blue transition-colors">
-                Bedbees
-              </span>
-              <span className="text-xs text-paragraph -mt-1">Invest in Travel</span>
-            </div>
           </Link>
 
           {/* Desktop Navigation - Left aligned next to logo */}

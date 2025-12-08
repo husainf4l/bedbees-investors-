@@ -1,113 +1,93 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight, Play, Sparkles, TrendingUp, Globe, Users } from "lucide-react";
 import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-sand via-sand-light to-white overflow-hidden pt-20 pb-20">
-      {/* Enhanced Decorative Background */}
-      <div className="absolute top-20 right-0 w-[700px] h-[700px] bg-travel-blue rounded-full opacity-10 blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-travel-blue rounded-full opacity-10 blur-3xl"></div>
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-sand rounded-full opacity-30 blur-3xl"></div>
+    <section className="relative min-h-screen bg-white overflow-hidden pt-20 pb-20">
+      {/* Subtle Decorative Background */}
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-50 rounded-full opacity-40 blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-50 rounded-full opacity-40 blur-3xl"></div>
 
-      <div className="max-w-7xl mx-auto px-8">
+      <div className="max-w-7xl mx-auto px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           {/* Left Side - Text Content */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="space-y-8 z-10"
-          >
+          <div className="space-y-8">
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-lg">
+              <Sparkles className="w-4 h-4" />
+              <span>Exclusive Investment Opportunity</span>
+              <div className="w-2 h-2 bg-blue-300 rounded-full animate-pulse"></div>
+            </div>
+
             {/* Main Headline */}
             <div className="space-y-6">
-              <motion.h1
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2, duration: 0.8 }}
-                className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-title"
-              >
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-black leading-tight text-gray-900">
                 We&apos;re Rewriting the Future of Travel — And You Can Own a Piece of It.
-              </motion.h1>
+              </h1>
 
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.4, duration: 0.8 }}
-                className="text-paragraph text-lg md:text-xl leading-relaxed max-w-xl"
-              >
+              <p className="text-gray-700 text-base md:text-lg leading-relaxed max-w-xl">
                 Join us as we revolutionize an entire industry, empowering communities and shaping a smarter, more connected world of exploration.
-              </motion.p>
+              </p>
             </div>
 
             {/* CTA Buttons */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6, duration: 0.8 }}
-              className="flex flex-col sm:flex-row gap-4"
-            >
+            <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/become-investor" className="w-full sm:w-auto">
-                <button className="w-full group px-8 py-4 bg-travel-blue text-white rounded-xl font-semibold hover:bg-travel-blue-hover transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 transform hover:-translate-y-1">
-                  <span>Become an Investor</span>
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                <button className="w-full group relative px-8 py-5 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-2xl font-bold text-lg shadow-xl hover:shadow-2xl flex items-center justify-center gap-3 overflow-hidden transition-all duration-300 hover:scale-105">
+                  <span className="relative z-10">Become an Investor</span>
+                  <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-2 transition-transform" />
                 </button>
               </Link>
               <Link href="/contact" className="w-full sm:w-auto">
-                <button className="w-full px-8 py-4 bg-white text-travel-blue border-2 border-travel-blue rounded-xl font-semibold hover:bg-travel-blue hover:text-white transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center gap-2">
+                <button className="w-full px-8 py-5 bg-white text-blue-600 border-2 border-blue-600 rounded-2xl font-bold text-lg shadow-lg hover:bg-blue-600 hover:text-white transition-all duration-300 flex items-center justify-center gap-2 hover:scale-105">
                   <span>Learn More</span>
+                  <Play className="w-5 h-5" />
                 </button>
               </Link>
-            </motion.div>
+            </div>
 
-            {/* Enhanced Stats */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.8, duration: 0.8 }}
-              className="grid grid-cols-3 gap-6 pt-8"
-            >
-              <div className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border border-card-border shadow-sm">
-                <div className="text-3xl font-bold text-travel-blue">$1M</div>
-                <div className="text-xs text-paragraph mt-1">Target Valuation</div>
+            {/* Enhanced Stats with Icons */}
+            <div className="grid grid-cols-3 gap-4 pt-8">
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6 border-2 border-blue-200 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 group">
+                <TrendingUp className="w-5 h-5 text-blue-600 mb-2 group-hover:scale-110 transition-transform" />
+                <div className="text-2xl font-black bg-gradient-to-r from-blue-600 to-blue-700 bg-clip-text text-transparent">$1M</div>
+                <div className="text-xs text-gray-600 mt-2 font-semibold">Target Valuation</div>
               </div>
-              <div className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border border-card-border shadow-sm">
-                <div className="text-3xl font-bold text-travel-blue">10%</div>
-                <div className="text-xs text-paragraph mt-1">Equity Available</div>
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6 border-2 border-blue-200 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 group">
+                <Users className="w-5 h-5 text-blue-600 mb-2 group-hover:scale-110 transition-transform" />
+                <div className="text-2xl font-black bg-gradient-to-r from-blue-600 to-blue-700 bg-clip-text text-transparent">10%</div>
+                <div className="text-xs text-gray-600 mt-2 font-semibold">Equity Available</div>
               </div>
-            </motion.div>
-          </motion.div>
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6 border-2 border-blue-200 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 group">
+                <Globe className="w-5 h-5 text-blue-600 mb-2 group-hover:scale-110 transition-transform" />
+                <div className="text-2xl font-black bg-gradient-to-r from-blue-600 to-blue-700 bg-clip-text text-transparent">∞</div>
+                <div className="text-xs text-gray-600 mt-2 font-semibold">Global Impact</div>
+              </div>
+            </div>
+          </div>
 
-          {/* Right Side - Enhanced Video */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-            className="relative h-[600px] hidden lg:block"
-          >
-            {/* Glow Effect */}
-            <div className="absolute inset-0 bg-travel-blue/10 rounded-3xl blur-2xl transform scale-105"></div>
+          {/* Right Side - Enhanced Image */}
+          <div className="relative h-[600px] hidden lg:block">
+            {/* Enhanced Glow Layers */}
+            <div className="absolute -inset-6 bg-gradient-to-r from-blue-400 to-blue-600 rounded-3xl opacity-20 blur-3xl"></div>
+            <div className="absolute -inset-4 bg-gradient-to-br from-blue-300 to-blue-500 rounded-3xl opacity-15 blur-2xl"></div>
             
             {/* Image Container */}
-            <div className="relative w-full h-full rounded-3xl overflow-hidden shadow-2xl shadow-travel-blue/20 border border-white/50">
+            <div className="relative w-full h-full rounded-3xl overflow-hidden shadow-2xl border-4 border-white hover:shadow-blue-500/30 hover:scale-[1.02] transition-all duration-500 group">
               <img
                 src="/videos/heroimage.webp"
                 alt="Bedbees Platform"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
               
-              {/* Enhanced Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-travel-blue/10"></div>
-              
-              {/* Corner Accent */}
-              <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-3 shadow-lg">
-                <div className="w-3 h-3 bg-travel-blue rounded-full animate-pulse"></div>
-              </div>
+              {/* Enhanced Gradient Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-blue-900/40 via-blue-900/10 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-transparent to-transparent"></div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
