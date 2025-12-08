@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import ProviderSection from "@/components/ProviderSection";
 import {
   AlertCircle,
   DollarSign,
@@ -242,6 +243,9 @@ export default function WhyBedbeesPage() {
           </div>
         </div>
       </section>
+
+      {/* Provider Ecosystem */}
+      <ProviderSection variant="compact" />
 
       {/* CTA Section */}
       <section className="py-24 bg-gradient-to-br from-travel-blue via-travel-blue-hover to-travel-blue text-white relative overflow-hidden">

@@ -14,7 +14,7 @@ export const siteConfig = {
   },
 
   investor: {
-    totalAllocation: "20% equity",
+    totalAllocation: "10% equity",
     minimumInvestment: 1000,
     
     ownership: [

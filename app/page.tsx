@@ -1,7 +1,11 @@
 "use client";
 
 import Hero from "@/components/Hero";
-import AppleFeatures from "@/components/AppleFeatures";
+import InvestmentHighlights from "@/components/InvestmentHighlights";
+import MarketOpportunity from "@/components/MarketOpportunity";
+import ProviderSection from "@/components/ProviderSection";
+import WhyNow from "@/components/WhyNow";
+import InvestorCTA from "@/components/InvestorCTA";
 
 export default function HomePage() {
   return (
@@ -9,8 +13,20 @@ export default function HomePage() {
       {/* Hero Section */}
       <Hero />
       
-      {/* Apple-Style Features */}
-      <AppleFeatures />
+      {/* Investment Highlights */}
+      <InvestmentHighlights />
+      
+      {/* Market Opportunity */}
+      <MarketOpportunity />
+      
+      {/* Provider Ecosystem */}
+      <ProviderSection variant="compact" />
+      
+      {/* Why Now */}
+      <WhyNow />
+      
+      {/* Final CTA */}
+      <InvestorCTA />
     </>
   );
 }

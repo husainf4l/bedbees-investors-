@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import ProviderSection from "@/components/ProviderSection";
 import { 
   DollarSign, 
   TrendingUp, 
@@ -375,6 +376,9 @@ export default function BusinessModelPage() {
           </motion.div>
         </div>
       </section>
+
+      {/* Provider Ecosystem */}
+      <ProviderSection variant="compact" />
 
       {/* CTA */}
       <section className="py-32 px-6">

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import ProviderSection from "@/components/ProviderSection";
 import {
   Heart,
   Globe,
@@ -75,9 +76,9 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white pt-20">
       {/* Hero Section */}
-      <section className="py-20 md:py-28 bg-gradient-to-br from-white to-gray-50">
+      <section className="py-20 md:py-32 bg-gradient-to-b from-[#FAF9F7] to-white">
         <div className="max-w-7xl mx-auto px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left - Text */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -85,28 +86,27 @@ export default function AboutPage() {
               transition={{ duration: 0.8 }}
               className="max-w-2xl"
             >
-              <div className="text-sm font-semibold text-travel-blue tracking-wide uppercase mb-4">
-                About Bedbees
+              <div className="inline-block px-4 py-2 bg-[#2563EB]/10 rounded-full mb-6">
+                <span className="text-[#2563EB] font-semibold text-sm tracking-wide uppercase">About Bedbees</span>
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-title mb-6 leading-tight">
-                Redesigning how the world travels.
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#111827] mb-6 leading-tight">
+                Redesigning How the World Travels
               </h1>
-              <p className="mt-4 text-lg md:text-xl text-gray-600 leading-relaxed">
-                We&apos;re building a transparent, human-centered travel platform
-                where travelers, providers, and communities all win.
+              <p className="text-xl text-[#6B7280] leading-relaxed mb-8">
+                We're building a transparent, human-centered travel platform where travelers, providers, and communities all win.
               </p>
-              <div className="mt-8 flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="#mission"
-                  className="inline-flex items-center justify-center rounded-full bg-travel-blue px-8 py-3 text-base font-semibold text-white hover:bg-travel-blue-hover transition-all duration-300 shadow-lg hover:shadow-xl"
+                  className="inline-flex items-center justify-center rounded-xl bg-[#2563EB] px-8 py-4 text-base font-semibold text-white hover:bg-[#1d4ed8] transition-all duration-300 shadow-lg hover:shadow-xl"
                 >
-                  Meet the vision
+                  Explore Our Vision
                 </Link>
                 <Link
                   href="/"
-                  className="inline-flex items-center justify-center text-travel-blue hover:text-travel-blue-hover font-semibold transition-colors"
+                  className="inline-flex items-center justify-center px-8 py-4 text-[#2563EB] hover:text-[#1d4ed8] font-semibold transition-colors"
                 >
-                  Explore the product →
+                  See the Platform →
                 </Link>
               </div>
             </motion.div>
@@ -118,16 +118,13 @@ export default function AboutPage() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="relative hidden lg:block"
             >
-              <div className="relative w-full h-[500px] rounded-3xl overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-travel-blue/10 to-travel-blue/20 rounded-3xl"></div>
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-gradient-to-br from-travel-blue-light to-travel-blue rounded-full opacity-20 blur-3xl"></div>
-                <motion.div
-                  animate={{ y: [0, -20, 0] }}
-                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                  className="absolute inset-0 flex items-center justify-center"
-                >
-                  <Globe className="w-64 h-64 text-travel-blue opacity-30" strokeWidth={0.5} />
-                </motion.div>
+              <div className="relative w-full h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+                <img 
+                  src="/videos/heroro.webp" 
+                  alt="Bedbees Vision" 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </div>
             </motion.div>
           </div>
@@ -135,17 +132,20 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Vision */}
-      <section id="mission" className="py-16 md:py-20 bg-white">
-        <div className="max-w-5xl mx-auto px-8">
+      <section id="mission" className="py-32 bg-white">
+        <div className="max-w-6xl mx-auto px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-12"
+            className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-title mb-4">
-              Our Mission & Vision
+            <div className="inline-block px-4 py-2 bg-[#2563EB]/10 rounded-full mb-6">
+              <span className="text-[#2563EB] font-semibold text-sm">Our Purpose</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-[#111827] mb-4">
+              Mission & Vision
             </h2>
           </motion.div>
 
@@ -156,27 +156,29 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="rounded-2xl bg-white shadow-sm border border-gray-100 p-8"
+              className="rounded-3xl bg-white shadow-lg border border-gray-100 p-10 hover:shadow-2xl transition-all duration-300"
             >
-              <div className="flex items-center mb-4">
-                <Target className="w-8 h-8 text-travel-blue mr-3" />
-                <h3 className="text-2xl font-semibold text-title">Our Mission</h3>
+              <div className="flex items-center mb-6">
+                <div className="w-14 h-14 bg-[#2563EB]/10 rounded-2xl flex items-center justify-center mr-4">
+                  <Target className="w-7 h-7 text-[#2563EB]" strokeWidth={2} />
+                </div>
+                <h3 className="text-2xl font-bold text-[#111827]">Our Mission</h3>
               </div>
-              <p className="text-gray-600 leading-relaxed mb-4">
-                To create the world&apos;s most trusted, transparent, and human-centered
+              <p className="text-[#6B7280] leading-relaxed mb-4">
+                To create the world's most trusted, transparent, and human-centered
                 travel platform — where travelers can book anything in one place,
                 providers can grow their businesses without commissions, and AI
                 empowers everyone to explore the world effortlessly.
               </p>
-              <p className="text-gray-600 leading-relaxed mb-4">
+              <p className="text-[#6B7280] leading-relaxed mb-6">
                 Bedbees exists to remove barriers, reduce stress, eliminate hidden
                 fees, and replace complexity with clarity.
               </p>
-              <div className="border-l-4 border-[#FF8C00] pl-4 mt-6">
-                <p className="text-title font-semibold italic">
-                  &quot;Does this make travel more honest, more human, and more joyful?&quot;
+              <div className="border-l-4 border-[#2563EB] pl-6 bg-[#FAF9F7] rounded-r-xl p-4">
+                <p className="text-[#111827] font-semibold italic mb-2">
+                  "Does this make travel more honest, more human, and more joyful?"
                 </p>
-                <p className="text-sm text-gray-500 mt-2">
+                <p className="text-sm text-[#6B7280]">
                   Every decision begins with this question.
                 </p>
               </div>
@@ -188,64 +190,70 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="rounded-2xl bg-gradient-to-br from-orange-50 to-yellow-50 border border-orange-100 p-8"
+              className="rounded-3xl bg-gradient-to-br from-[#2563EB] to-[#1e40af] text-white p-10 shadow-lg hover:shadow-2xl transition-all duration-300"
             >
-              <div className="flex items-center mb-4">
-                <Compass className="w-8 h-8 text-travel-blue mr-3" />
-                <h3 className="text-2xl font-semibold text-title">Our Vision</h3>
+              <div className="flex items-center mb-6">
+                <div className="w-14 h-14 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mr-4">
+                  <Compass className="w-7 h-7 text-white" strokeWidth={2} />
+                </div>
+                <h3 className="text-2xl font-bold">Our Vision</h3>
               </div>
-              <p className="text-gray-700 leading-relaxed mb-4">
+              <p className="leading-relaxed mb-4 text-gray-100">
                 To become the global home for travel — a platform where travelers
                 discover, plan, connect, and book with complete peace of mind.
               </p>
-              <p className="text-gray-700 leading-relaxed mb-4">
+              <p className="leading-relaxed mb-6 text-gray-100">
                 Where providers operate on a sustainable and ethical business model,
-                communities share the world&apos;s hidden gems, and AI personalizes every
+                communities share the world's hidden gems, and AI personalizes every
                 journey.
               </p>
-              <p className="text-xl font-bold text-travel-blue mt-6">
-                Bedbees is not just a booking system.<br />
-                It is a new travel ecosystem.
-              </p>
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                <p className="text-xl font-bold">
+                  Bedbees is not just a booking system.<br />
+                  It is a new travel ecosystem.
+                </p>
+              </div>
             </motion.div>
           </div>
         </div>
       </section>
 
       {/* Why We Created Bedbees */}
-      <section className="py-16 md:py-20 bg-gray-50">
+      <section className="py-32 bg-gradient-to-b from-[#FAF9F7] to-white">
         <div className="max-w-6xl mx-auto px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mb-12"
+            className="mb-16"
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-title mb-6 leading-tight">
-              We saw a travel industry that was powerful — but not fair.
+            <div className="inline-block px-4 py-2 bg-[#2563EB]/10 rounded-full mb-6">
+              <span className="text-[#2563EB] font-semibold text-sm">The Problem</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-[#111827] mb-6 leading-tight">
+              We Saw a Travel Industry That Was Powerful — But Not Fair
             </h2>
-            <div className="border-l-4 border-[#FF8C00] pl-6 space-y-4">
-              <p className="text-lg text-gray-700 leading-relaxed">
+            <div className="border-l-4 border-[#2563EB] pl-8 space-y-4 bg-white rounded-r-3xl p-8 shadow-lg">
+              <p className="text-lg text-[#6B7280] leading-relaxed">
                 The world of travel is fragmented, confusing, and often unfair.
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <p className="text-lg text-[#6B7280] leading-relaxed">
                 Travelers deal with hidden fees, fake reviews, overbooking, decision
                 paralysis, scattered planning tools, and poor customer support.
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <p className="text-lg text-[#6B7280] leading-relaxed">
                 Providers deal with high commissions, low margins, lack of
                 visibility, and dependence on unpredictable algorithms.
               </p>
-              <p className="text-xl font-semibold text-travel-blue mt-6">
-                This global imbalance inspired us to build a platform where everyone
-                wins.
+              <p className="text-xl font-semibold text-[#2563EB] mt-6">
+                This global imbalance inspired us to build a platform where everyone wins.
               </p>
             </div>
           </motion.div>
 
           {/* Stats/Highlights */}
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-8">
             {[
               { label: "Travelers", issue: "Overwhelmed and misled" },
               { label: "Providers", issue: "Struggling to survive" },
@@ -257,12 +265,12 @@ export default function AboutPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 text-center"
+                className="bg-white rounded-3xl p-8 shadow-lg border border-gray-100 text-center hover:shadow-2xl transition-all duration-300"
               >
-                <p className="text-2xl font-bold text-travel-blue mb-2">
+                <p className="text-3xl font-bold text-[#2563EB] mb-3">
                   {stat.label}
                 </p>
-                <p className="text-gray-600">{stat.issue}</p>
+                <p className="text-[#6B7280]">{stat.issue}</p>
               </motion.div>
             ))}
           </div>
@@ -547,6 +555,9 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* Provider Ecosystem - Full Version */}
+      <ProviderSection variant="full" />
 
       {/* The Heart of Bedbees */}
       <section className="py-16 md:py-20 bg-gradient-to-br from-[#FF8C00] to-[#E67E00] text-white">

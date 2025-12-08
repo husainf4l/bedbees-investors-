@@ -75,7 +75,7 @@ export default function Hero() {
                 <div className="text-xs text-paragraph mt-1">Target Valuation</div>
               </div>
               <div className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border border-card-border shadow-sm">
-                <div className="text-3xl font-bold text-travel-blue">20%</div>
+                <div className="text-3xl font-bold text-travel-blue">10%</div>
                 <div className="text-xs text-paragraph mt-1">Equity Available</div>
               </div>
             </motion.div>
@@ -91,18 +91,13 @@ export default function Hero() {
             {/* Glow Effect */}
             <div className="absolute inset-0 bg-travel-blue/10 rounded-3xl blur-2xl transform scale-105"></div>
             
-            {/* Video Container */}
+            {/* Image Container */}
             <div className="relative w-full h-full rounded-3xl overflow-hidden shadow-2xl shadow-travel-blue/20 border border-white/50">
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
+              <img
+                src="/videos/heroimage.webp"
+                alt="Bedbees Platform"
                 className="w-full h-full object-cover"
-              >
-                <source src="/videos/hero.webm" type="video/webm" />
-                Your browser does not support the video tag.
-              </video>
+              />
               
               {/* Enhanced Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-travel-blue/10"></div>
