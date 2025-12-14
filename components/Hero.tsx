@@ -50,27 +50,27 @@ export default function Hero() {
             </div>
 
             {/* Enhanced Stats with Icons */}
-            <div className="grid grid-cols-3 gap-4 pt-8">
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6 border-2 border-blue-200 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 group">
-                <TrendingUp className="w-5 h-5 text-blue-600 mb-2 group-hover:scale-110 transition-transform" />
-                <div className="text-2xl font-black bg-gradient-to-r from-blue-600 to-blue-700 bg-clip-text text-transparent">$1M</div>
-                <div className="text-xs text-gray-600 mt-2 font-semibold">Target Valuation</div>
+            <div className="grid grid-cols-3 gap-2 pt-4">
+              <div className="bg-white/80 backdrop-blur-sm rounded-lg p-3 border border-blue-100 shadow-sm hover:shadow-md hover:border-blue-300 transition-all duration-300 group">
+                <TrendingUp className="w-3.5 h-3.5 text-blue-600 mb-1 group-hover:scale-110 transition-transform" />
+                <div className="text-lg font-bold text-blue-700">$1M</div>
+                <div className="text-[9px] text-gray-500 mt-0.5 font-medium leading-tight">Target Valuation</div>
               </div>
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6 border-2 border-blue-200 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 group">
-                <Users className="w-5 h-5 text-blue-600 mb-2 group-hover:scale-110 transition-transform" />
-                <div className="text-2xl font-black bg-gradient-to-r from-blue-600 to-blue-700 bg-clip-text text-transparent">10%</div>
-                <div className="text-xs text-gray-600 mt-2 font-semibold">Equity Available</div>
+              <div className="bg-white/80 backdrop-blur-sm rounded-lg p-3 border border-blue-100 shadow-sm hover:shadow-md hover:border-blue-300 transition-all duration-300 group">
+                <Users className="w-3.5 h-3.5 text-blue-600 mb-1 group-hover:scale-110 transition-transform" />
+                <div className="text-lg font-bold text-blue-700">10%</div>
+                <div className="text-[9px] text-gray-500 mt-0.5 font-medium leading-tight">Equity Available</div>
               </div>
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6 border-2 border-blue-200 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 group">
-                <Globe className="w-5 h-5 text-blue-600 mb-2 group-hover:scale-110 transition-transform" />
-                <div className="text-2xl font-black bg-gradient-to-r from-blue-600 to-blue-700 bg-clip-text text-transparent">∞</div>
-                <div className="text-xs text-gray-600 mt-2 font-semibold">Global Impact</div>
+              <div className="bg-white/80 backdrop-blur-sm rounded-lg p-3 border border-blue-100 shadow-sm hover:shadow-md hover:border-blue-300 transition-all duration-300 group">
+                <Globe className="w-3.5 h-3.5 text-blue-600 mb-1 group-hover:scale-110 transition-transform" />
+                <div className="text-lg font-bold text-blue-700">∞</div>
+                <div className="text-[9px] text-gray-500 mt-0.5 font-medium leading-tight">Global Impact</div>
               </div>
             </div>
           </div>
 
           {/* Right Side - Enhanced Image */}
-          <div className="relative h-[600px] hidden lg:block">
+          <div className="relative h-[400px] hidden lg:block">
             {/* Enhanced Glow Layers */}
             <div className="absolute -inset-6 bg-gradient-to-r from-blue-400 to-blue-600 rounded-3xl opacity-20 blur-3xl"></div>
             <div className="absolute -inset-4 bg-gradient-to-br from-blue-300 to-blue-500 rounded-3xl opacity-15 blur-2xl"></div>

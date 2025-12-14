@@ -264,37 +264,6 @@ export default function InvestorPage() {
           </motion.div>
         </div>
       </section>
-
-      {/* CTA */}
-      <section className="section-container bg-gradient-to-r from-primary-600 to-primary-700 text-white text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to Invest?
-          </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto text-blue-100">
-            Secure your position as a founding investor today
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/contact"
-              className="bg-white text-primary-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-            >
-              Schedule a Call
-            </Link>
-            <Link
-              href="/faq"
-              className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary-600 transition-all duration-300 shadow-lg"
-            >
-              Read FAQ
-            </Link>
-          </div>
-        </motion.div>
-      </section>
     </>
   );
 }

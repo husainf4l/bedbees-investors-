@@ -9,7 +9,6 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-1">
             <div className="flex items-center space-x-2 mb-4">
-              <span className="text-3xl">🐝</span>
               <span className="text-2xl font-bold">BedBees</span>
             </div>
             <p className="text-gray-400 text-sm">

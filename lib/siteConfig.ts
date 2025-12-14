@@ -26,7 +26,7 @@ export const siteConfig = {
     
     growthPrinciple: "Returns depend entirely on actual company performance. As subscription revenue and global market adoption grow, the investor pool benefits proportionally. No specific annual return or financial figure is promised.",
     
-    disclaimer: "Investor returns vary based on real platform revenue and profit. Year 1 is primarily a growth year (technology, provider onboarding, user acquisition). Investor payouts typically begin once stable revenue is established (commonly from Year 2 onward). All projections are estimates only; no guaranteed income.",
+    disclaimer: "Investor returns vary based on real platform revenue and profit. Year 1 is primarily a growth year (technology, provider onboarding, user acquisition). However, investors start earning from the first year as soon as the company generates revenue. Investor payouts typically begin once stable revenue is established (commonly from Year 2 onward). All projections are estimates only.",
   },
 
   features: {
