@@ -691,7 +691,7 @@ export default function BecomeInvestorPage() {
               },
               {
                 icon: Target,
-                title: "A global-first expansion strategy with Cyprus HQ",
+                title: "A global-first expansion strategy with UK HQ",
                 description: "Strategically positioned to serve EU, GCC, and emerging markets from day one"
               },
               {

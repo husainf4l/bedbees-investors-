@@ -4,12 +4,9 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import {
   Mail,
-  MessageSquare,
-  Briefcase,
-  Newspaper,
-  ChevronDown,
   Send,
   MapPin,
+  ChevronDown,
 } from "lucide-react";
 
 export default function ContactPage() {
@@ -21,37 +18,6 @@ export default function ContactPage() {
   });
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const contactCards = [
-    {
-      icon: Briefcase,
-      title: "Investment Inquiries",
-      description: "Questions about equity, terms, or investment opportunities.",
-      email: "investors@bedbees.com",
-      gradient: "from-sand-light to-white",
-    },
-    {
-      icon: MessageSquare,
-      title: "Shareholder Relations",
-      description: "Updates, reports, and shareholder communication.",
-      email: "shareholders@bedbees.com",
-      gradient: "from-white to-sand-light",
-    },
-    {
-      icon: Briefcase,
-      title: "Partnership Opportunities",
-      description: "Strategic partnerships and collaboration proposals.",
-      email: "partners@bedbees.com",
-      gradient: "from-sand-light to-white",
-    },
-    {
-      icon: Newspaper,
-      title: "Legal & Compliance",
-      description: "Legal documentation, agreements, and compliance matters.",
-      email: "legal@bedbees.com",
-      gradient: "from-white to-sand-light",
-    },
-  ];
 
   const faqs = [
     {
@@ -132,42 +98,6 @@ export default function ContactPage() {
               and guide you through the investment process.
             </p>
           </motion.div>
-        </div>
-      </section>
-
-      {/* Contact Cards Block */}
-      <section className="py-16 md:py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {contactCards.map((card, index) => {
-              const Icon = card.icon;
-              return (
-                <motion.a
-                  key={card.title}
-                  href={`mailto:${card.email}`}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className={`group bg-gradient-to-br ${card.gradient} rounded-2xl border border-gray-100 shadow-sm p-8 hover:shadow-md hover:-translate-y-1 transition-all duration-300`}
-                >
-                  <Icon className="w-10 h-10 text-travel-blue mb-4" />
-                  <h3 className="text-2xl font-semibold text-title mb-2">
-                    {card.title}
-                  </h3>
-                  <p className="text-gray-600 mb-4">{card.description}</p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-travel-blue font-medium">
-                      {card.email}
-                    </span>
-                    <span className="text-travel-blue transform group-hover:translate-x-1 transition-transform">
-                      →
-                    </span>
-                  </div>
-                </motion.a>
-              );
-            })}
-          </div>
         </div>
       </section>
 
@@ -329,7 +259,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Head Office - Cyprus */}
+      {/* Head Office - United Kingdom */}
       <section className="py-16 md:py-20 bg-gradient-to-br from-white via-orange-50/30 to-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <svg viewBox="0 0 1000 500" className="w-full h-full">
@@ -352,7 +282,7 @@ export default function ContactPage() {
               <span className="text-sm font-semibold text-gray-700">Global Expansion</span>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-title mb-4">
-              Head Office — Cyprus
+              Head Office — United Kingdom
             </h2>
             <p className="text-xl text-gray-600 font-medium mb-2">
               (Planned Establishment)
@@ -368,11 +298,11 @@ export default function ContactPage() {
           >
             <p className="text-lg text-gray-700 leading-relaxed">
               As part of our global expansion strategy, Bedbees is in the process of establishing 
-              its official head office in Cyprus.
+              its official head office in the United Kingdom.
             </p>
             
             <p className="text-lg text-gray-700 leading-relaxed">
-              Cyprus offers an ideal environment for international travel and technology companies, 
+              The United Kingdom offers an ideal environment for international travel and technology companies, 
               and this move strengthens our long-term vision for building a global, scalable, and 
               investor-friendly corporate structure.
             </p>

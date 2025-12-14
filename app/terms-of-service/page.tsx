@@ -57,7 +57,7 @@ export default function TermsOfServicePage() {
     },
     {
       title: "10. Governing Law",
-      text: "These Terms shall be governed by the laws of Cyprus (planned headquarters) or your applicable jurisdiction, depending on investor regulations."
+      text: "These Terms shall be governed by the laws of the United Kingdom (planned headquarters) or your applicable jurisdiction, depending on investor regulations."
     },
     {
       title: "11. Contact",

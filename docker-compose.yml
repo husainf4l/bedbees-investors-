@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  bedbees-investors:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ghcr.io/husainf4l/bedbees-investors:latest
+    container_name: bedbees-investors
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
