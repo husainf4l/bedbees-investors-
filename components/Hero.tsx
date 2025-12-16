@@ -14,22 +14,20 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           {/* Left Side - Text Content */}
-          <div className="space-y-8">
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-lg">
-              <Sparkles className="w-4 h-4" />
-              <span>Exclusive Investment Opportunity</span>
-              <div className="w-2 h-2 bg-blue-300 rounded-full animate-pulse"></div>
-            </div>
-
+          <div className="space-y-8 pt-12">
             {/* Main Headline */}
             <div className="space-y-6">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-black leading-tight text-gray-900">
-                We&apos;re Rewriting the Future of Travel — And You Can Own a Piece of It.
-              </h1>
+              <div className="space-y-3">
+                <h2 className="text-xl md:text-2xl font-bold text-blue-600">
+                  An AI-Powered Platform for Smarter Travel
+                </h2>
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-black leading-tight text-gray-900">
+                  We&apos;re Rewriting the Future of Travel — And You Can Own a Piece of It.
+                </h1>
+              </div>
 
               <p className="text-gray-700 text-base md:text-lg leading-relaxed max-w-xl">
-                Join us as we revolutionize an entire industry, empowering communities and shaping a smarter, more connected world of exploration.
+                Join us as we build a more efficient and fair travel ecosystem, empowering communities and shaping a smarter, more connected world of exploration.
               </p>
             </div>
 
@@ -70,7 +68,7 @@ export default function Hero() {
           </div>
 
           {/* Right Side - Enhanced Image */}
-          <div className="relative h-[400px] hidden lg:block">
+          <div className="relative h-[250px] hidden lg:block">
             {/* Enhanced Glow Layers */}
             <div className="absolute -inset-6 bg-gradient-to-r from-blue-400 to-blue-600 rounded-3xl opacity-20 blur-3xl"></div>
             <div className="absolute -inset-4 bg-gradient-to-br from-blue-300 to-blue-500 rounded-3xl opacity-15 blur-2xl"></div>
